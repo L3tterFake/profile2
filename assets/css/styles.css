@@ -156,31 +156,31 @@ body.dark-theme {
 }
 
 .profile__perfil {
-  width: 500px;
-  height: 500px;
-
-  border-radius: 100%;
-  overflow: hidden;
+  width: 115px;               /* Ukuran profil sesuai dengan bingkai */
+  height: 115px;              /* Ukuran profil sesuai dengan bingkai */
+  border-radius: 50%;         /* Membuat profil berbentuk bulat */
+  overflow: hidden;           /* Menyembunyikan bagian gambar yang keluar dari bingkai */
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;        /* Menyelaraskan gambar secara vertikal di tengah */
+  justify-content: center;     /* Menyelaraskan gambar secara horizontal di tengah */
 }
 
 .profile__perfil img {
-  width: 100px;
+  width: 100%;                /* Gambar mengisi 100% lebar kontainer */
+  height: 100%;               /* Gambar mengisi 100% tinggi kontainer */
+  object-fit: cover;          /* Memastikan gambar tetap mengisi area kontainer tanpa terdistorsi */
 }
 
 .profile__border {
   border: 3.5px solid var(--first-color);
   justify-self: center;
-  width: 115px;
-  height: 115px;
-  border-radius: 50%;
+  width: 115px;               /* Ukuran border/bingkai */
+  height: 115px;              /* Ukuran border/bingkai */
+  border-radius: 50%;         /* Membuat bingkai berbentuk bulat */
   display: grid;
   place-items: center;
   margin-bottom: .75rem;
 }
-
 .profile__name {
   font-size: var(--h2-font-size);
 }

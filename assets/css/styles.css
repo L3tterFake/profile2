@@ -159,7 +159,7 @@ body.dark-theme {
   width: 100px;
   height: 100px;
 
-  border-radius: 50%;
+  border-radius: 100%;
   overflow: hidden;
   display: flex;
   align-items: flex-end;

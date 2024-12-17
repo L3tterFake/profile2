@@ -156,8 +156,8 @@ body.dark-theme {
 }
 
 .profile__perfil {
-  width: 115px;               /* Ukuran profil sesuai dengan bingkai */
-  height: 115px;              /* Ukuran profil sesuai dengan bingkai */
+  width: 100px;               /* Ukuran profil sesuai dengan bingkai */
+  height: 100px;              /* Ukuran profil sesuai dengan bingkai */
   border-radius: 50%;         /* Membuat profil berbentuk bulat */
   overflow: hidden;           /* Menyembunyikan bagian gambar yang keluar dari bingkai */
   display: flex;

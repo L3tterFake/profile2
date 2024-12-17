@@ -358,14 +358,9 @@ body.dark-theme {
 .projects__card:hover .projects__modal {
   bottom: 0;
 }
-
 /*=============== SKILLS ===============*/
 .skills__content {
-  display: flex;
-  flex-direction: column;    /* Membuat kontainer menjadi vertikal */
-  justify-content: flex-end; /* Mengatur agar konten berada di bagian bawah */
-  row-gap: 3.5rem;           /* Menjaga jarak antar elemen */
-  height: 100vh;             /* Memastikan kontainer setinggi layar */
+  row-gap: 3.5rem;
 }
 
 .skills__title {
@@ -376,16 +371,14 @@ body.dark-theme {
 
 .skills__box {
   display: flex;
-  justify-content: center;   /* Meratakan konten secara horizontal */
+  justify-content: center;   
   column-gap: 3rem;
 }
 
 .skills__group {
-  display: flex;             /* Menggunakan flex untuk menggantikan grid */
-  flex-wrap: wrap;           /* Membuat elemen membungkus di beberapa baris */
-  justify-content: center;   /* Meratakan elemen secara horizontal */
-  align-items: flex-end;     /* Meratakan elemen ke bawah */
-  row-gap: 1rem;             /* Memberikan jarak antar baris */
+  display: grid;
+  align-content: flex-start;
+  row-gap: 1rem;
 }
 
 .skills__data {
@@ -407,7 +400,6 @@ body.dark-theme {
 .skills__level {
   font-size: var(--smaller-font-size);
 }
-
 /* Hide and show projects & skills */
 .filters [data-content] {
   display: none;

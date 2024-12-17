@@ -166,8 +166,8 @@ body.dark-theme {
 }
 
 .profile__perfil img {
-  width: 100%;                /* Gambar mengisi 100% lebar kontainer */
-  height: 100%;               /* Gambar mengisi 100% tinggi kontainer */
+  width: 200%;                /* Gambar mengisi 100% lebar kontainer */
+  height: 200%;               /* Gambar mengisi 100% tinggi kontainer */
   object-fit: cover;          /* Memastikan gambar tetap mengisi area kontainer tanpa terdistorsi */
 }
 

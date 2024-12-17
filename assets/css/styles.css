@@ -361,7 +361,11 @@ body.dark-theme {
 
 /*=============== SKILLS ===============*/
 .skills__content {
-  row-gap: 3.5rem;
+  display: flex;
+  flex-direction: column;    /* Membuat kontainer menjadi vertikal */
+  justify-content: flex-end; /* Mengatur agar konten berada di bagian bawah */
+  row-gap: 3.5rem;           /* Menjaga jarak antar elemen */
+  height: 100vh;             /* Memastikan kontainer setinggi layar */
 }
 
 .skills__title {
@@ -372,15 +376,16 @@ body.dark-theme {
 
 .skills__box {
   display: flex;
-  align-items: center;     /* Rata tengah vertikal */
-  height: 100vh;  
+  justify-content: center;   /* Meratakan konten secara horizontal */
   column-gap: 3rem;
 }
 
 .skills__group {
-  display: grid;
-  align-content: flex-start;
-  row-gap: 1rem;
+  display: flex;             /* Menggunakan flex untuk menggantikan grid */
+  flex-wrap: wrap;           /* Membuat elemen membungkus di beberapa baris */
+  justify-content: center;   /* Meratakan elemen secara horizontal */
+  align-items: flex-end;     /* Meratakan elemen ke bawah */
+  row-gap: 1rem;             /* Memberikan jarak antar baris */
 }
 
 .skills__data {
